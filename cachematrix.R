@@ -1,8 +1,10 @@
 ## The following functions are used to cache the inverse of a square matrix.
 
-## Write a short comment describing this function
+## makeCacheMatrix contains a function that creates the cache of the inverse 
+## of the matrix.
 
 ## Assignment #2 Part 1
+
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
         set <- function(y) {
@@ -18,9 +20,13 @@ makeCacheMatrix <- function(x = matrix()) {
         
 }
 
-## Write a short comment describing this function
+## cacheSolve contains a function that checks if the inverse of the matrix
+## has already been solved. If so, the inverse is retrieved from the cache
+## and a message is printed alerting that cached data is being used. If not, 
+## the function continues by solving the matrix and prints the result.
 
 ## Assignment #2 Part 2
+
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
         m <- x$getinverse()
